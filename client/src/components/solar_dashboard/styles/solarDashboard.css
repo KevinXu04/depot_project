@@ -1,0 +1,97 @@
+.solar-dashboard {
+    padding: 2rem;
+    background-color: #f5f5f5;
+}
+  
+.card-container {
+    display: flex;
+    gap: 1rem;
+    margin-bottom: 2rem;
+    justify-content: space-evenly;
+
+}
+  
+.performance-monitoring {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    width: 50%;
+}
+  
+.additional-info {
+    display: flex;
+    gap: 1rem;
+    margin-top: 1rem;
+}
+  
+.chart {
+    margin: 2rem 0;
+}
+
+
+.second-row {
+    display: flex;
+    justify-content: space-around;
+    gap: 35px;
+}
+
+.card, .chart-container canvas, .performance-monitoring {
+    background-color: white;
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+    width: 50%;
+    border-radius: 20px;
+    padding: 20px;
+    transition: .5s;
+    border: 2px solid transparent;
+}
+
+.card {
+    display: flex;
+}
+
+.card .card-information {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.card h4 {
+    margin: 10px 0 10px 0;
+}
+
+.card h2 {
+    margin-top: 5px;
+}
+
+.card:hover, .chart-container canvas:hover, .performance-monitoring:hover {
+    transform: scale(1.05);
+    border-color: #1b3b73;
+}
+
+.card-graph {
+    width: 49%;
+    display: flex;
+    align-items: center;
+}
+
+.performance-monitoring {
+    display: flex;
+}
+
+.charging-usage {
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.capacity-yield {
+    display: inherit;
+    justify-content: space-around;
+    background-color: #f4f4f4;
+    border-radius: 20px;
+}
+
+.solar-dashboard .card-container canvas {
+    background-color: transparent;
+    box-shadow: none;
+    border: none;
+}
